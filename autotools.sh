@@ -6,7 +6,7 @@ cd instantnoodle
 
 title="OnePlus 8 Auto-Tools"
 prompt="What would you like to do?"
-options=("Flash Lineage Recovery" "Root" "factory reset" "bootloader unlock (devices bought from oneplus.com only)");
+options=("Flash Lineage Recovery" "Root" "factory reset" "bootloader unlock (devices bought from oneplus.com only)" "Install GCam");
 
 echo "$title"
 PS3="$prompt "
@@ -42,6 +42,13 @@ select opt in "${options[@]}" "Quit"; do
        adb reboot bootloader
        sudo fastboot oem unlock
        echo "Press yes to continue. The device will reboot when done."
+       ;;
+    5) echo "About to setup GCam, please wait..."
+       wget https://theproplayer.com/KyG/GCam-v7.3.apk
+       wget https://theproplayer.com/KyG/nrG.xml
+       adb push nrG.xml /storage/emulated/0/GCam/Configs7/nrG.xml
+       adb install GCam-v7.3.apk
+       echo "Done! GCam installed!"
        ;;
     $((${#options[@]}+1))) echo "Exiting..."; break;;
     *) echo "Invalid option. Try another one.";continue;;

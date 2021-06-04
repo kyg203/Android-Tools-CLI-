@@ -9,17 +9,17 @@ PS3="$prompt "
 select opt in "${options[@]}" "Quit"; do 
     case "$REPLY" in
     1) echo "Downloading $opt"
-       cd ~/instantnoodle-autotools-cli/rom/pixelexperience
+       cd ~/instantnoodle-autotools-cli-main/rom/pixelexperience
        sudo bash pixelize-me.sh
        cd ../../
        ;;
     2) echo "Downloading $opt"
-       cd ~/instantnoodle-autotools-cli/rom/lineageos
+       cd ~/instantnoodle-autotools-cli-main/rom/lineageos
        sudo bash discover-your-lineage.sh
        cd ../../
        ;;
     3) echo "Downloading $opt"
-       cd ~/instantnoodle-autotools-cli/rom/shapeshift
+       cd ~/instantnoodle-autotools-cli-main/rom/shapeshift
        sudo bash shapeshift-my-device.sh
        cd ../../
        ;;

@@ -24,8 +24,9 @@ WARNING --------> THIS IS STRICTLY IN ALPHA TESTING // USE AT YOUR OWN RISK AND 
 
 <-------------- REQUIREMENTS --------------->
 1. YOUR DEVICE MUST BE BOOTLOADER UNLOCKED
-2. PATIENCE - This project is still in the process of setting up and may produce errors. Feel free to contact me or anyone on XDA to help you with any issues or answer your questions.
-3. BACKUP YOUR DATA - Backup all of your data even before you unlock your bootlaoder, because as soon as it is unlocked the device is wiped. Be prepared and you have been warned.
+2. PUT THIS FOLDER IN ROOT (~) aka Home
+3. PATIENCE - This project is still in the process of setting up and may produce errors. Feel free to contact me or anyone on XDA to help you with any issues or answer your questions.
+4. BACKUP YOUR DATA - Backup all of your data even before you unlock your bootlaoder, because as soon as it is unlocked the device is wiped. Be prepared and you have been warned.
 
 <-------------- RECOMMENDATIONS ------------>
 

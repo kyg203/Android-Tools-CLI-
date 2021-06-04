@@ -1,9 +1,5 @@
 #!/bin/bash
 
-cd ~
-mkdir instantnoodle
-cd instantnoodle
-
 title="OnePlus 8 Custom ROM installer"
 prompt="Pick your ROM"
 options=("PixelExperience ROM" "Lineage OS" "ShapeShift OS")

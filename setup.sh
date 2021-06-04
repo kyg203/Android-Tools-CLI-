@@ -1,6 +1,5 @@
 #!/bin/bash
 
-mv ~/Downloads/instantnoodle-autotools-cli-main ~/instantnoodle-autotools-cli
 echo "Setting up instantnoodle auto tools for the first time, please wait..."
 echo "installing tools"
 sudo apt-get install wget
@@ -23,5 +22,5 @@ sudo cp fastboot /usr/bin
 echo "ADB and Fastboot setup."
 sudo chmod +x autotools.sh
 echo "To begin using autotools, type ./autotools.sh in the instantnoodle-autotools-cli folder"
-cd ~/instantnoodle-autotools-cli
+cd ~/instantnoodle-autotools-cli-main
 done

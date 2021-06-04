@@ -28,6 +28,7 @@ WARNING --------> THIS IS STRICTLY IN ALPHA TESTING // USE AT YOUR OWN RISK AND 
 3. BACKUP YOUR DATA - Backup all of your data even before you unlock your bootlaoder, because as soon as it is unlocked the device is wiped. Be prepared and you have been warned.
 
 <-------------- RECOMMENDATIONS ------------>
+
 I highly recommend you root your phone and leave Lineage Recovery or Pixel Experience Recovery on the device. This generally makes troubleshooting faster and easier. Plus, it allows you to backup your persist.img in the chances it does get corrupted. I will be adding a tool to backup and restore this image for you. 
 
 If enough support comes through, I will make a Telegram and Discord for this project specifically for support. :)

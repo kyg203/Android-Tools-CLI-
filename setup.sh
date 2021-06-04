@@ -1,5 +1,6 @@
 #!/bin/bash
 
+mv ~/Downloads/instantnoodle-autotools-cli-main ~/instantnoodle-autotools-cli
 echo "Setting up instantnoodle auto tools for the first time, please wait..."
 echo "installing tools"
 sudo apt-get install wget

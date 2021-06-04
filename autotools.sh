@@ -16,17 +16,10 @@ select opt in "${options[@]}" "Quit"; do
        adb reboot bootloader
        sudo fastboot flash recovery recovery.img
        sudo fastboot reboot
+       rm recovery.img
        ;;
     2) echo "preparing to root your phone... Please wait"
-       mkdir root
-       cd root
-       echo "Downloading tools to root your phone..."
-       wget https://github.com/topjohnwu/Magisk/releases/download/v23.0/Magisk-v23.0.apk
-       mv Magisk-v23.0.apk magisk.zip
-       echo "Go to Apply Update > Apply from ADB on your phone. When prompted, press Yes."
-       read -p "Press any key to continue"
-       adb sideload magisk.zip
-       read "you can now reboot your device. Press the back arrow button at the top and then press 'Reboot system now'"
+       sudo bash ~/instantnoodle-autotools-cli-main/root/root.sh
        ;;
     3) echo "Are you sure you want to factory reset your phone?"
        read -p "Press any button to continue or press ctrl + c to cancel"
@@ -42,11 +35,7 @@ select opt in "${options[@]}" "Quit"; do
        echo "Press yes to continue. The device will reboot when done."
        ;;
     5) echo "About to setup GCam, please wait..."
-       wget https://theproplayer.com/KyG/GCam-v7.3.apk
-       wget https://theproplayer.com/KyG/nrG.xml
-       adb push nrG.xml /storage/emulated/0/GCam/Configs7/nrG.xml
-       adb install GCam-v7.3.apk
-       echo "Done! GCam installed!"
+       bash ~/instantnoodle-autotools-cli-main/apps/GCam/gcam-installer.sh
        ;;
     $((${#options[@]}+1))) echo "Exiting..."; break;;
     *) echo "Invalid option. Try another one.";continue;;

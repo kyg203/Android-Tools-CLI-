@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/instantnoodle-autotools-cli
+cd ~/instantnoodle-autotools-cli-main
 
 title="OnePlus 8 Auto-Tools"
 prompt="What would you like to do?"

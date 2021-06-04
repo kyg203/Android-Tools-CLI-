@@ -28,7 +28,7 @@ select opt in "${options[@]}" "Quit"; do
        ./flash.sh;;
     2) echo "Downloading $opt"
        cd ~/instantnoodle-autotools-cli/rom/lineageos
-       sudo bash explore-your-lineage.sh
+       sudo bash discover-your-lineage.sh
        ;;
     3) echo "Downloading $opt"
        cd ~/instantnoodle-autotools-cli/rom/shapeshift

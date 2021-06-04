@@ -1,5 +1,5 @@
 read -p "You are about to root your phone with Magisk (version 23). Press any button to continue."
-cd ~/instantnoodle-autotools-cli/root
+cd ~/instantnoodle-autotools-cli-main/root
 echo "Downloading Magisk and Lineage Recovery..."
 wget https://github.com/topjohnwu/Magisk/releases/download/v23.0/Magisk-v23.0.apk
 wget https://mirrorbits.lineageos.org/recovery/instantnoodle/20210529/lineage-18.1-20210529-recovery-instantnoodle.img

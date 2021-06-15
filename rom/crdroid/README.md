@@ -1,4 +1,4 @@
-crDroid v7.6 for OnePlus 8 (instantnoodle) [2020-05-31]
+crDroid v7.6 for OnePlus 8 (instantnoodle) [2021-05-31]
 
 XDA Forum - https://forum.xda-developers.com/t/rom-official-instantnoodle-11-0-crdroid-v7-6.4201887/
 

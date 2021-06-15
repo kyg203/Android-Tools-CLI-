@@ -21,3 +21,4 @@ sudo fastboot reboot
 echo "Rebooting and cleaning up disk space..."
 rm *.img
 echo "All done!"
+cd ../../

@@ -27,4 +27,4 @@ read -p "press any key to continue once GAPPS are downloaded"
 echo "flashing NikGapps"
 adb sideload nikgapps.zip
 echo "GAPPS flashed. Factory reset and then reboot! Cleaning up temporary files..."
-rm nikgapps
+rm nikgapps.zip

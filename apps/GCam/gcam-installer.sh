@@ -8,17 +8,30 @@ echo "$title"
 PS3="$prompt"
 select opt in "${options[@]}" "Quit"; do 
 case "$REPLY" in
-    1) echo "Installing GCam v7.3"
-       sudo bash v8.1-gcam-v1.2.sh
+    1) echo "Preparing to instal GCam v7.3 on your device"
+       echo "Downloading GCam v7.3 APK"
+       wget https://www.theproplayer.com/KyG/7.3.apk
+       read -p "Press anywhere to continue once GCam v7.3 has downloaded"
+       echo "GCam v7.3 downloaded. Installing..."
+       adb install 7.3.apk
+       echo "GCam v7.3 installed! Press 3 to exit."
        exit
        ;;
     2) echo "Installing GCam v8.1-1.2"
-       sudo bash v8.1-gcam-v1.2.sh
+       echo "Downloading PX Camera APK"
+       wget https://www.theproplayer.com/KyG/PX.apk
+       read -p "Press anywhere to continue once PX Camera has downloaded"
+       echo "PX Camera downloaded. Installing..."
+       adb install PX.apk
+       echo "PX Camera installed! Press 3 to exit."
        exit
        ;;
-    3) echo "Installing both GCam v7.3 and v8.1-1.2"
-       sudo bash v8.1-gcam-v1.2.sh
-       sudo bash v8.1-gcam-v1.2.sh
+    3) echo "Installing both GCam v7.3 and PX Camera"
+       wget https://www.theproplayer.com/KyG/PX.apk
+       wget https://www.theproplayer.com/KyG/7.3.apk
+       adb install PX.apk
+       adb install 7.3.apk
+       echo "Both apps installed. Press 3 to exit"
        exit
        ;;
     $((${#options[@]}+1))) echo "Exiting..."; 

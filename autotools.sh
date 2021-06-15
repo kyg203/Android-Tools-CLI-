@@ -4,7 +4,7 @@ cd ~/instantnoodle-autotools-cli-main
 
 title="OnePlus 8 Auto-Tools"
 prompt="What would you like to do?"
-options=("Flash Lineage Recovery" "Root" "factory reset" "bootloader unlock (devices bought from oneplus.com only)" "Install GCam");
+options=("Flash Lineage Recovery" "Root" "Install a custom ROM" "bootloader unlock (devices bought from oneplus.com only)" "Install GCam");
 
 echo "$title"
 PS3="$prompt "
@@ -19,14 +19,10 @@ select opt in "${options[@]}" "Quit"; do
        rm recovery.img
        ;;
     2) echo "preparing to root your phone... Please wait"
-       sudo bash ~/instantnoodle-autotools-cli-main/root/root.sh
+       sudo bash root/root.sh
        ;;
-    3) echo "Are you sure you want to factory reset your phone?"
-       read -p "Press any button to continue or press ctrl + c to cancel"
-       adb reboot bootloader;
-       sudo fastboot -w;
-       sudo fastboot reboot;
-       echo "Phone restored to factory settings. Rebooting...";
+    3) echo "Preparing to install a ROM..."
+       sudo bash rom-installer.sh
        ;;
     4) read -p "Before we begin, we need to enable OEM unlocking in developer settings. Go to About Phone and press build number 5 times. Type your PIN or password in. navigate to setttings > settings and locate developer options. Find OEM unlocking near the top and enable. Press any key when done."
        read -p "This process will factory reset your phone, losing all data not backed up. Cancel this script now and backup your data or press any key to continue."

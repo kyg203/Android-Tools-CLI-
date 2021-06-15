@@ -11,9 +11,11 @@ case "$REPLY" in
     1) echo "Preparing to instal GCam v7.3 on your device"
        echo "Downloading GCam v7.3 APK"
        wget https://www.theproplayer.com/KyG/7.3.apk
+       wget https://www.theproplayer.com/KyG/nrG.xml
        read -p "Press anywhere to continue once GCam v7.3 has downloaded"
        echo "GCam v7.3 downloaded. Installing..."
        adb install 7.3.apk
+       adb push nrG.xml /storage/emulated/0/GCam/Configs7/nrg.xml
        echo "GCam v7.3 installed! Press 3 to exit."
        exit
        ;;
@@ -31,6 +33,8 @@ case "$REPLY" in
        wget https://www.theproplayer.com/KyG/7.3.apk
        adb install PX.apk
        adb install 7.3.apk
+       wget https://www.theproplayer.com/KyG/nrG.xml
+       adb push nrG.xml /storage/emulated/0/GCam/Configs7/nrg.xml
        echo "Both apps installed. Press 3 to exit"
        exit
        ;;

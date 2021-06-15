@@ -10,9 +10,8 @@ python3 payload_dumper.py payload.bin
 cd output
 read -p "Before Pixelization, please backup your phone!"
 adb reboot fastboot
-sudo bash ~/instantnoodle-autotools-cli-main/rom/fastboot-img-flash.sh
+sudo bash ../fastboot-flash.sh
 sudo fastboot reboot
 rm *.img
 cd ../
 rm payload.bin
-done

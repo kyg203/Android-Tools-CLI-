@@ -28,4 +28,6 @@ wget -O nikgapps.zip https://downloads.sourceforge.net/project/nikgapps/Releases
 read -p "press any key to continue once GAPPS are downloaded"
 echo "flashing NikGapps"
 adb sideload nikgapps.zip
-echo "GAPPS flashed. Factory reset and then reboot!
+echo "GAPPS flashed. Factory reset and then reboot! Cleaning up temporary files..."
+cd ../
+rm -r crdroid

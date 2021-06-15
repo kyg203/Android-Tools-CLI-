@@ -2,26 +2,23 @@
 
 title="OnePlus 8 Custom ROM installer"
 prompt="Pick your ROM"
-options=("PixelExperience ROM" "Lineage OS" "ShapeShift OS")
+options=("PixelExperience ROM" "Lineage OS" "ShapeShift OS" "crDroid")
 
 echo "$title"
 PS3="$prompt "
 select opt in "${options[@]}" "Quit"; do 
     case "$REPLY" in
     1) echo "Downloading $opt"
-       cd ~/instantnoodle-autotools-cli-main/rom/pixelexperience
-       sudo bash pixelize-me.sh
-       cd ../../
+       sudo bash rom/pixelexperience/pixelize-me.sh
        ;;
     2) echo "Downloading $opt"
-       cd ~/instantnoodle-autotools-cli-main/rom/lineageos
-       sudo bash discover-your-lineage.sh
-       cd ../../
+       sudo bash rom/lineageos/discover-your-lineage.sh
        ;;
     3) echo "Downloading $opt"
-       cd ~/instantnoodle-autotools-cli-main/rom/shapeshift
-       sudo bash shapeshift-my-device.sh
-       cd ../../
+       sudo bash rom/shapeshift/shapeshift-my-device.sh
+       ;;
+    4) echo "Downloading $opt"
+       sudo bash rom/crdroid/crdroid.sh
        ;;
     $((${#options[@]}+1))) echo "Goodbye!"; break;;
     *) echo "Invalid option. Try another one.";continue;;

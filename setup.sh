@@ -1,11 +1,8 @@
 #!/bin/bash
 
 echo "Setting up instantnoodle auto tools for the first time, please wait..."
-echo "installing tools"
-sudo apt-get install wget
-sudo apt-get install python3
-sudo apt-get install python3.8
-sudo apt-get install python3-pip
+echo "installing tools..."
+sudo apt-get install wget python3 python3-pip
 pip3 install protobuf
 pip3 install bsdiff4
 wget https://github.com/vm03/payload_dumper/archive/refs/heads/master.zip
@@ -19,8 +16,8 @@ echo "setting up ADB and Fastboot"
 cd platform-tools
 sudo cp adb /usr/bin
 sudo cp fastboot /usr/bin
+cd ../
 echo "ADB and Fastboot setup."
 sudo chmod +x autotools.sh
+sudo chmod 777 ./
 echo "To begin using autotools, type ./autotools.sh in the instantnoodle-autotools-cli folder"
-cd ~/instantnoodle-autotools-cli-main
-done

@@ -1,6 +1,6 @@
 cd rom/crdroid
 echo "Downloading ROM... after ROM is downloaded, you can come away from the computer if needed. ROM donwload takes about 3 minutes."
-wget -O crdroid.zip https://downloads.sourceforge.net/project/crdroid/instantnoodle/7.x/crDroidAndroid-11.0-20210531-instantnoodle-v7.6.zip?ts=gAAAAABgyOapMPFrlX-6sdZLCBlBNBuwYuBmHRZXZqIq7FV5o732Rt2oh6uyD4G6ngsHQ3H2w1wIJ0kDHyuRE8W1eRDK-buP9g%3D%3D&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fcrdroid%2Ffiles%2Finstantnoodle%2F7.x%2FcrDroidAndroid-11.0-20210531-instantnoodle-v7.6.zip%2Fdownload
+wget -O crdroid.zip https://downloads.sourceforge.net/project/crdroid/instantnoodle/7.x/crDroidAndroid-11.0-20210813-instantnoodle-v7.9.zip?ts=gAAAAABhHYMNctI0gWpQC7lF8G8WXx_NINoxOYtZzv-oLl3uhdDtpdA8FJock6DwZsn07nuhe3MyJICV93i576EMoxvvSztW6Q%3D%3D&use_mirror=master&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fcrdroid%2Ffiles%2Finstantnoodle%2F7.x%2FcrDroidAndroid-11.0-20210813-instantnoodle-v7.9.zip%2Fdownload%3Fuse_mirror%3Dmaster
 read -p "Press any key when download is finished. You can move away from the computer after this is finsihed."
 echo "Decompressing zipped folder."
 unzip crdroid.zip

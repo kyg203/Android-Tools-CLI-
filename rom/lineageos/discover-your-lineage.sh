@@ -1,7 +1,6 @@
 cd rom/lineageos
 echo "Downloading Lineage OS v18.1 (Android 11)"
-wget https://mirrorbits.lineageos.org/full/instantnoodle/20210814/lineage-18.1-20210814-nightly-instantnoodle-signed.zip
-mv lineage-18.1-20210612-nightly-instantnoodle-signed.zip lineage.zip
+wget -O lineage.zip https://mirrorbits.lineageos.org/full/instantnoodle/20210814/lineage-18.1-20210814-nightly-instantnoodle-signed.zip
 unzip lineage.zip
 mv payload.bin ../../payload_dumper-master/
 rm care_map.pb

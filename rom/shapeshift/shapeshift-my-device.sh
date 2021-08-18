@@ -16,7 +16,7 @@ echo "Rebooting to fastboot and beginning flashing process."
 adb reboot fastboot
 sudo fastboot erase system
 sudo fastboot erase userdata
-sudo bash ../../rom/fastboot-flash.sh
+sudo bash ../fastboot-flash.sh
 echo "ShapeShift OS successfully installed!"
 rm *.img
 cd ../

@@ -4,7 +4,7 @@ cd ~/instantnoodle-autotools-cli-main
 
 title="OnePlus 8 Auto-Tools"
 prompt="What would you like to do?"
-options=("Flash Lineage Recovery" "Root" "Install a custom ROM" "bootloader unlock (devices bought from oneplus.com only)" "Install GCam");
+options=("Flash Lineage Recovery" "Root" "Install a custom ROM" "bootloader unlock (devices bought from oneplus.com only)" "Install GCam" "Backup Persist.img" "Restore persist.img");
 
 echo "$title"
 PS3="$prompt "
@@ -35,6 +35,9 @@ select opt in "${options[@]}" "Quit"; do
        ;;
     6) echo "Preparing to backup your persist.img... Please ensure you are rooted!"
        bash backup_persist.sh
+       ;;
+    7) echo "Preparing to restore the last available backup of your persist.img..."
+       bash restore_persist.sh
        ;;
     $((${#options[@]}+1))) echo "Exiting..."; break;;
     *) echo "Invalid option. Try another one.";continue;;

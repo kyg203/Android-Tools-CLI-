@@ -8,7 +8,16 @@ Website - https://download.pixelexperience.org/
 
 <---------- I S S U E S ---------->
 
-None at the moment...
+Two-button is a bit glitchy at times when trying to go home. 
 
 
+
+
+
+Report any other issues to kyrangough2019@gmail.com with the subject 'PE - Report'
 ___________________________________
+
+HIGHLIGHTS
+
+L1 WideVine Support!
+Google Pay support out of the box

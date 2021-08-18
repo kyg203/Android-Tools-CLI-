@@ -33,6 +33,9 @@ select opt in "${options[@]}" "Quit"; do
     5) echo "About to setup GCam, please wait..."
        bash ~/instantnoodle-autotools-cli-main/apps/GCam/gcam-installer.sh
        ;;
+    6) echo "Preparing to backup your persist.img... Please ensure you are rooted!"
+       bash backup_persist.sh
+       ;;
     $((${#options[@]}+1))) echo "Exiting..."; break;;
     *) echo "Invalid option. Try another one.";continue;;
     esac

@@ -8,7 +8,7 @@ Website - None - Uses SourceForge to host files
 
 <---------- I S S U E S ---------->
 
-None at the moment...
+I wasn't able to boot at all... Didn't have Oxygen OS 11 as a base, but never have had to prior to this version. 
 
-
+Report any other issues to kyrangough2019@gmail.com with the subject line 'ShapeShift OS - Report'
 ____________________________________

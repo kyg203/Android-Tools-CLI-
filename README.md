@@ -4,8 +4,8 @@ Hey all!
 
 I've started this project to allow people to use their devices longer, right now with a focus on the OnePlus 8, but eventually spreading to more devices. 
 These scripts are currently for Linux Ubuntu/Debian distros only, but I plan on expanding support to other systems as well.
-Below is a link to all the files you will need to start using the scripts for beta testing on Linux machines. The only three ROMs available at the moment 
-are Lineage OS 18.1 (with or without Google), ShapeShift OS v2.6, and Pixel Experience, but, again, more ROMs will be supported. I also plan to include troubleshooting support for frequent issues 
+Below is a link to all the files you will need to start using the scripts for beta testing on Linux machines. The only four ROMs available at the moment 
+are Lineage OS 18.1 (with or without Google), ShapeShift OS v2.7, and PixelExperience 11 Plus, crDroid v7.9 but, again, more ROMs will be supported. I also plan to include troubleshooting support for frequent issues 
 that can be fixed.
 
 setup.sh - this script installs all of the tools and software for the next scripts to use for flashing. Please initiate this script first time and every week or so to keep tools up-to-date and fresh.

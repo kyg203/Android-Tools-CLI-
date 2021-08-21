@@ -1,8 +1,8 @@
 #!/bin/bash
 
 title="GCam Installer for instantnoodle"
-prompt="Which version of GCam would you like to install? v8.1-1.2 does not support auxillery cameras, but takes better photos while v7.3 brings support for auxillery but slightly worse photos."
-options=("GCam v7.3" "GCam v8.1-1.2" "Both");
+prompt="Which version of GCam would you like to install? PX does not support auxillery cameras, but takes better photos while v7.3 brings support for auxillery but slightly worse photos."
+options=("GCam v7.3" "PX Camera" "Both");
 
 echo "$title"
 PS3="$prompt"
@@ -17,7 +17,7 @@ case "$REPLY" in
        adb install 7.3.apk
        adb push nrG.xml /storage/emulated/0/GCam/Configs7/nrg.xml
        echo "GCam v7.3 installed! Press 3 to exit."
-       exit
+       break;;
        ;;
     2) echo "Installing GCam v8.1-1.2"
        echo "Downloading PX Camera APK"
@@ -26,7 +26,7 @@ case "$REPLY" in
        echo "PX Camera downloaded. Installing..."
        adb install PX.apk
        echo "PX Camera installed! Press 3 to exit."
-       exit
+       break;;
        ;;
     3) echo "Installing both GCam v7.3 and PX Camera"
        wget https://www.theproplayer.com/KyG/PX.apk
@@ -35,12 +35,12 @@ case "$REPLY" in
        adb install 7.3.apk
        wget https://www.theproplayer.com/KyG/nrG.xml
        adb push nrG.xml /storage/emulated/0/GCam/Configs7/nrg.xml
-       echo "Both apps installed. Press 3 to exit"
-       exit
+       echo "Both apps installed."
+       break;;
        ;;
     $((${#options[@]}+1))) echo "Exiting..."; 
     break;;
-    *) echo "Invalid option. Try another one."; 
+    *) echo "Invalid option. Press 1 for GCam v7.3, 2 for PX Camera and 3 to exit."; 
     continue;;
     esac
     done

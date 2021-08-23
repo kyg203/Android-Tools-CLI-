@@ -1,22 +1,30 @@
-# instantnoodle-tools-cli-main
+# Android Tools [CLI]
 
-Hey all!
+Android Tools (CLI)
+Ky Gough
+kyrangough2019@gmail.com
+Open Source project :)
 
-I've started this project to allow people to use their devices longer, right now with a focus on the OnePlus 8, but eventually spreading to more devices. 
-These scripts are currently for Linux Ubuntu/Debian distros only, but I plan on expanding support to other systems as well.
-Below is a link to all the files you will need to start using the scripts for beta testing on Linux machines. The only four ROMs available at the moment 
-are Lineage OS 18.1 (with or without Google), ShapeShift OS v2.7, and PixelExperience 11 Plus, crDroid v7.9 but, again, more ROMs will be supported. I also plan to include troubleshooting support for frequent issues 
-that can be fixed.
 
-setup.sh - this script installs all of the tools and software for the next scripts to use for flashing. Please initiate this script first time and every week or so to keep tools up-to-date and fresh.
+Information
+I originally made Android Tools when I noticed the trend of people keeping their devices for longer than usual, especially during these times with Covid-19. This not only leaves people with old and outdated software, but may also leave a lot of Android-based devices vulnerable to attacks. My goal for this project is to support as many custom ROMs for as many devices as possible and to make it easier for the average consumer to update their device outside of their manufacturers release cycle. 
 
-autotools.sh - This is the main script you will be executing. The rest will be executed from here. Do not execute any others manually to ensure you don't break anything. 
+At the time of writing, we are a little ways off our goal because I am accustomed to Linux, which is not something the average consumer is used to, and I only have a singular device, the mildy unpopular OnePlus 8. In order for us to reach our goal, we need some beta testers to test out the code on their devices and give us feedback on what went well, what could be improved upon, and what went completely wrong. My device is almost compeletely supported, minus a few custom ROMs and MSM tool. I would like to provide easy documentation and instructions for average users to unlock their bootloader / SIM for custom ROM support. 
 
-rom-installer.sh - ROM chooser script. downloads the ROM of your choice and extracts the fastboot images from the payload.bin file. Do not execute from here. 
+Once testing is complete, I want to re-write the programs for Windows machines with a GUI . I have a Windows 10 virtualbox setup, however, that isn’t very efficient and only have one laptop for daily driving at college. Plus, I’m not entirely sure what I’m doing with Windows as a whole anyway.
 
-In each ROM folder, there will be an info "readme" file. These files basically serve as a directory listing, allowing you to find the project page on XDA/GitHub/Website, look at any known bugs before you flash, and see any special install instructions. Please check these files regularly!
+If you would like to test your device, please request your device to be added and I will add it in for you to the project for you to start testing. When you request, please be sure to add in the value you get back from ‘adb shell getprop ro.product.model’ within the email. If you don’t know how to execute it, you probably shouldn’t be testing it. Saying this for your own good!
 
-I will be focusing on perfecting the process on the command line on Ubuntu and Debian based distros first before I begin supporting more distros and operating systems. feel free to leave comments about the project below and begin porting your device into the project!
+
+Installation
+When you download the project, be sure to put it somewhere memorable, easy to access, and that won’t become cluttered. I like to put mine in my Downloads or Home directory, but whatever is easiest. Next, just cd into the project in Terminal and type ‘sudo bash setup.sh’. It took about a minute to setup on my device with an 11th Gen i7 and 16 GB RAM.
+
+From there, always cd into the project before you bash any scripts! As soon as you’re in, just type sudo bash android-tools.sh or ./android-tools.sh
+
+
+
+Credit to vm03 for payload_dumper-master. Appreciate your hardwork to allow this project to become successful in its operation. 
+
 
 <---------- WARNING ----------> 
 

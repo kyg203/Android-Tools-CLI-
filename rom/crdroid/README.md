@@ -11,6 +11,6 @@ Changelog - https://raw.githubusercontent.com/crdroidandroid/android_vendor_crDr
 
 <---------- I S S U E S ---------->
 
-None spotted so far. Ensure you flash GAPPS correctly and you are good.
+Camera issues. Some have reported issues with their T-Mobile (IN2017) devices not receiving any signal too. 
 
 ___________________________________
